@@ -1,7 +1,7 @@
 # FastAPI React CRUD App
 
 A simple full-stack CRUD application built using FastAPI and React.
-
+live link :: https://item-hub-three.vercel.app
 ## Features
 
 - Create Items
