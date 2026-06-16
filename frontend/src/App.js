@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API_BASE = "https://itemhub-production.up.railway.app";
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 function App() {
   const [items, setItems] = useState([]);
@@ -195,7 +195,7 @@ function App() {
               <p className="empty-hint">Add your first item using the form above.</p>
             </div>
           ) :  (
-            <ul className="items-list" role="list">
+            <ul className="items-list">
               {items.map((item, index) => (
                 <li
                   key={item.id}
